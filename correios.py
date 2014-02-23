@@ -11,8 +11,8 @@ def usage():
 def encomenda(lista):
     for codigo in lista:
         content = []
-        with urllib.request.urlopen('http://websro.correios.com.br/sro_bin/txect01$.QueryList?P_ITEMCODE=&P_LINGUA=001&P_TESTE=&P_TIPO=001&P_COD_UNI={}'\
-                                                                                                                                        .format(codigo)) as url:
+        address = 'http://websro.correios.com.br/sro_bin/txect01$.QueryList?P_ITEMCODE=&P_LINGUA=001&P_TESTE=&P_TIPO=001&P_COD_UNI='
+        with urllib.request.urlopen(address + codigo) as url:
             for line in url.readlines():
                 content.append(line.decode('iso-8859-1'))
                 
