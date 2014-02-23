@@ -1,6 +1,5 @@
-Script simples para rastrear encomendas nos correios brasileiros atráves 
-do código de 13 caracteres. 
+Script simples para rastrear encomendas nos correios brasileiros atrï¿½ves 
+do cï¿½digo de 13 caracteres. 
 
-Modo de uso:
-
-./correios.py <código1> <código2> ... <códigoN>
+Modo de uso: 
+./correios.py "ENCOMENDA[1]" "ENCOMENDA[2]" ... "ENCOMENDA[N]"
